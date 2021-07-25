@@ -1,0 +1,3 @@
+CREATE TABLE `vitali7d_ex`.`posts` ( `userId` INT NOT NULL , `id` INT NOT NULL , `title` TEXT NOT NULL , `body` TEXT NOT NULL , PRIMARY KEY (`id`));
+
+CREATE TABLE `vitali7d_ex`.`comments` ( `postId` INT NOT NULL , `id` INT NOT NULL , `name` INT(255) NOT NULL , `email` INT(100) NOT NULL , `body` INT(500) NOT NULL , PRIMARY KEY (`id`), FOREIGN KEY (`postId`) REFERENCES posts(id));
